@@ -1,5 +1,7 @@
 import useSWR from 'swr'
 import { fetcher } from '../utils'
+import Head from 'next/head'
+import Layout from '../components/Layout'
 
 const Home = () => {
   const { data, error } = useSWR(`/api/profiles`, fetcher)
@@ -18,10 +20,17 @@ const Home = () => {
   }
 
   return(
-    <div>
-      <h1>Hey There. Here are all the profiles I know about:</h1>
-      {profiles()}
-    </div>
+    <>
+      <Head>
+        <title>Grace Blue Transition</title>
+      </Head>
+      <Layout>
+        <div>
+          <h1>Welcome to Grace Blue Transition</h1>
+          {profiles()}
+        </div>
+      </Layout>
+    </>
   )
 }
 
