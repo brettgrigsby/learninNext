@@ -1,7 +1,7 @@
 import React from 'react'
 
 const headerStyles = {
-  padding: 15,
+  padding: '15px 30px',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center'
