@@ -4,7 +4,8 @@ const headerStyles = {
   padding: '15px 30px',
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'center'
+  alignItems: 'center',
+  height: 50
 }
 
 const logoStyles = {
@@ -12,13 +13,15 @@ const logoStyles = {
 }
 
 const linksStyles = {
-  display: 'flex'
+  display: 'flex',
+  marginRight: 50
 }
 
 const linkStyles: React.CSSProperties = {
   textTransform: 'uppercase',
-  fontWeight: 'bold',
-  marginLeft: 30
+  fontFamily: 'lato-bold, sans-serif',
+  marginLeft: 30,
+  fontSize: 13
 }
 
 const links = ['home', 'about', 'insights', 'network', 'ask grace blue']

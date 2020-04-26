@@ -9,6 +9,11 @@ const initial = {
 export default function createProfileForm() {
   const [formData, setFormData] = useState(initial)
   return (
-    <div>Da Form</div>
+    <div style={{ width: '100%', backgroundColor: 'white' }}>
+      <form>
+        <input type="text" name="fname" />
+        <input type="text" name="lname" />
+      </form>
+    </div>
   )
 }
